@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rishabhja.trainingapp.MainActivity">
+
+    <EditText
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shorten"
+        android:textSize="30px"
+        android:id="@+id/button"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadingButtonClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result : "
+        android:id="@+id/textView"
+        android:textSize="27dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_loading"
+        android:visibility="invisible"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView2"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
